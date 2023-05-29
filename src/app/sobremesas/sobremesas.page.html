@@ -1,0 +1,154 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Sobremesas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Sobremesas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="containerPaginaInicialExtra">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Sobremesas do Mundo</ion-card-title>
+        <ion-card-subtitle>Serve uma pessoa</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item expand="block" (click)="setOpen(true)" lines="none">
+            <ion-thumbnail slot="start">
+              <img alt="Churros com Doce de Leite" src="https://i.imgur.com/lrhfvQE.png" />
+            </ion-thumbnail>
+            <ion-label>Churros com Doce de Leite</ion-label><ion-button>R$8.90</ion-button>
+            <ion-modal [isOpen]="isModalOpen">
+              <ng-template>
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title>Churros com Doce de Leite</ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button (click)="setOpen(false)">Fechar</ion-button>
+                    </ion-buttons>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content class="ion-padding">
+                  <img alt="Churros com Doce de Leite" src="https://i.imgur.com/RPtnluA.png" />
+                  <p>
+                    Churros são massas fritas em formato de palitos, polvilhadas com açúcar e canela. Nessa versão mexicana, são servidos com um delicioso doce de leite para mergulhar, proporcionando uma combinação de texturas crocantes e um sabor doce e indulgente.
+                  </p>
+                  <ion-button>Adicionar por R$8.90</ion-button>
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+          </ion-item>
+    
+          <ion-item expand="block" (click)="setOpen2(true)" lines="none">
+            <ion-thumbnail slot="start">
+              <img alt="Mango Sticky Rice (Arroz Doce com Manga)" src="https://i.imgur.com/MVTQhVP.png" />
+            </ion-thumbnail>
+            <ion-label>Mango Sticky Rice (Arroz Doce com Manga)</ion-label><ion-button>R$9.90</ion-button>
+            <ion-modal [isOpen]="isModalOpen2">
+              <ng-template>
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title>Mango Sticky Rice (Arroz Doce com Manga)</ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button (click)="setOpen2(false)">Fechar</ion-button>
+                    </ion-buttons>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content class="ion-padding">
+                  <img alt="Mango Sticky Rice (Arroz Doce com Manga)" src="https://i.imgur.com/W3cHoJ1.png" />
+                  <p>
+                    Uma sobremesa clássica da culinária tailandesa, o Mango Sticky Rice consiste em arroz glutinoso cozido no vapor, servido com fatias de manga fresca e regado com um molho de coco doce. É uma sobremesa tropical e refrescante.
+                  </p>
+                  <ion-button>Adicionar por R$9.90</ion-button>
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+          </ion-item>
+    
+          <ion-item expand="block" (click)="setOpen3(true)" lines="none">
+            <ion-thumbnail slot="start">
+              <img alt="Gulab Jamun" src="https://i.imgur.com/yRYVsxU.png" />
+            </ion-thumbnail>
+            <ion-label>Gulab Jamun</ion-label><ion-button>R$7.90</ion-button>
+            <ion-modal [isOpen]="isModalOpen3">
+              <ng-template>
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title>Gulab Jamun</ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button (click)="setOpen3(false)">Fechar</ion-button>
+                    </ion-buttons>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content class="ion-padding">
+                  <img alt="Gulab Jamun" src="https://i.imgur.com/ls3xR3Q.png" />
+                  <p>
+                    Gulab Jamun são bolinhas fritas de massa de leite embebidas em um xarope perfumado com água de rosas e cardamomo. São servidas quentes, sendo macias por dentro e cobertas com uma calda doce e aromática. É uma sobremesa indulgente e tradicional da culinária indiana.
+                  </p>
+                  <ion-button>Adicionar por R$7.90</ion-button>
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+          </ion-item>
+    
+          <ion-item expand="block" (click)="setOpen4(true)" lines="none">
+            <ion-thumbnail slot="start">
+              <img alt="Tiramisù clássico italiano" src="https://media.discordapp.net/attachments/1060989219432054835/1112838638833770639/d0878792-29a5-448c-8c69-060f996a8e82.jpg?width=60&height=60" />
+            </ion-thumbnail>
+            <ion-label>Tiramisù clássico italiano</ion-label><ion-button>R$9.99</ion-button>
+            <ion-modal [isOpen]="isModalOpen4">
+              <ng-template>
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title>Tiramisù clássico italiano</ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button (click)="setOpen4(false)">Fechar</ion-button>
+                    </ion-buttons>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content class="ion-padding">
+                  <img alt="Tiramisù clássico italiano" src="https://media.discordapp.net/attachments/1060989219432054835/1112838638833770639/d0878792-29a5-448c-8c69-060f996a8e82.jpg?width=350&height=350" />
+                  <p>
+                    Tiramisu é uma sobremesa clássica da culinária italiana, feita com camadas de biscoitos de champanhe embebidos em café, creme de queijo mascarpone e cacau em pó. É uma sobremesa cremosa, rica em sabores de café e queijo.
+                  </p>
+                  <ion-button>Adicionar por R$9.99</ion-button>
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+          </ion-item>
+
+          <ion-item expand="block" (click)="setOpen5(true)" lines="none">
+            <ion-thumbnail slot="start">
+              <img alt="Baklava" src="https://i.imgur.com/V03eA57.png" />
+            </ion-thumbnail>
+            <ion-label>Baklava</ion-label><ion-button>R$9.90</ion-button>
+            <ion-modal [isOpen]="isModalOpen5">
+              <ng-template>
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title>Baklava</ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button (click)="setOpen5(false)">Fechar</ion-button>
+                    </ion-buttons>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content class="ion-padding">
+                  <img alt="Baklava" src="https://i.imgur.com/VEijAe3.png" />
+                  <p>
+                    Um doce tradicional da culinária mediterrânea, a Baklava é feita com camadas finas de massa filo intercaladas com nozes picadas e regadas com xarope de mel e água de flor de laranjeira. É uma sobremesa crocante e delicadamente doce.
+                  </p>
+                  <ion-button>Adicionar por R$9.90</ion-button>
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

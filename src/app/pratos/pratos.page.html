@@ -1,0 +1,322 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Pratos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Pratos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="containerPaginaInicialExtra">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Entradas</ion-card-title>
+        <ion-card-subtitle>Serve até 2 pessoas</ion-card-subtitle>
+      </ion-card-header>
+      <div class="containerPaginaInicialExtra">
+          <ion-card-content>
+            <ion-list>
+              <ion-item expand="block" (click)="setOpen6(true)" lines="none">
+                <ion-thumbnail slot="start">
+                  <img alt="Guacamole com Nachos" src="https://i.imgur.com/ACAeQ3V.png" />
+                </ion-thumbnail>
+                <ion-label>Guacamole com Nachos</ion-label><ion-button>R$7.90</ion-button>
+                <ion-modal [isOpen]="isModalOpen6">
+                  <ng-template>
+                    <ion-header>
+                      <ion-toolbar>
+                        <ion-title>Guacamole com Nachos</ion-title>
+                        <ion-buttons slot="end">
+                          <ion-button (click)="setOpen6(false)">Fechar</ion-button>
+                        </ion-buttons>
+                      </ion-toolbar>
+                    </ion-header>
+                    <ion-content class="ion-padding">
+                      <img alt="Guacamole com Nachos" src="https://i.imgur.com/BrpSEpq.png" />
+                      <p>
+                        O guacamole é uma entrada tradicional da culinária mexicana, feito com abacate amassado, cebola, tomate, coentro, suco de limão e temperos. É servido com nachos crocantes, proporcionando uma combinação de texturas e sabores intensos.
+                      </p>
+                      <ion-button>Adicionar por R$7.90</ion-button>
+                    </ion-content>
+                  </ng-template>
+                </ion-modal>
+              </ion-item>
+        
+              <ion-item expand="block" (click)="setOpen7(true)" lines="none">
+                <ion-thumbnail slot="start">
+                  <img alt="Rolinhos Primavera" src="https://i.imgur.com/eHqT3kg.png" />
+                </ion-thumbnail>
+                <ion-label>Rolinhos Primavera</ion-label><ion-button>R$6.90</ion-button>
+                <ion-modal [isOpen]="isModalOpen7">
+                  <ng-template>
+                    <ion-header>
+                      <ion-toolbar>
+                        <ion-title>Rolinhos Primavera</ion-title>
+                        <ion-buttons slot="end">
+                          <ion-button (click)="setOpen7(false)">Fechar</ion-button>
+                        </ion-buttons>
+                      </ion-toolbar>
+                    </ion-header>
+                    <ion-content class="ion-padding">
+                      <img alt="Rolinhos Primavera" src="https://i.imgur.com/5u802ac.png" />
+                      <p>
+                        Os Rolinhos Primavera são uma entrada popular da culinária tailandesa, feitos com massa de arroz recheada com legumes frescos, como cenoura, pepino, alface e hortelã, além de opções de carne ou frutos do mar. São servidos com um molho agridoce para mergulhar.
+                      </p>
+                      <ion-button>Adicionar por R$6.90</ion-button>
+                    </ion-content>
+                  </ng-template>
+                </ion-modal>
+              </ion-item>
+        
+              <ion-item expand="block" (click)="setOpen8(true)" lines="none">
+                <ion-thumbnail slot="start">
+                  <img alt="Samosas" src="https://i.imgur.com/ZSDuGSp.png" />
+                </ion-thumbnail>
+                <ion-label>Samosas</ion-label><ion-button>R$5.90</ion-button>
+                <ion-modal [isOpen]="isModalOpen8">
+                  <ng-template>
+                    <ion-header>
+                      <ion-toolbar>
+                        <ion-title>Samosas</ion-title>
+                        <ion-buttons slot="end">
+                          <ion-button (click)="setOpen8(false)">Fechar</ion-button>
+                        </ion-buttons>
+                      </ion-toolbar>
+                    </ion-header>
+                    <ion-content class="ion-padding">
+                      <img alt="Samosas" src="https://i.imgur.com/Ha6AizQ.png" />
+                      <p>
+                        As Samosas são pastéis fritos originários da culinária indiana. São feitos com uma massa crocante e recheados com uma combinação de batatas, ervilhas, temperos e especiarias. São servidos com chutney de tamarindo ou molho de iogurte.
+                      </p>
+                      <ion-button>Adicionar por R$5.90</ion-button>
+                    </ion-content>
+                  </ng-template>
+                </ion-modal>
+              </ion-item>
+        
+              <ion-item expand="block" (click)="setOpen9(true)" lines="none">
+                <ion-thumbnail slot="start">
+                  <img alt="Bruschetta" src="https://media.discordapp.net/attachments/1060989219432054835/1112837229228871770/ab1fb7f1-4397-45d2-83ec-417b88b2d8d9.jpg?width=60&height=60" />
+                </ion-thumbnail>
+                <ion-label>Bruschetta</ion-label><ion-button>R$6.50</ion-button>
+                <ion-modal [isOpen]="isModalOpen9">
+                  <ng-template>
+                    <ion-header>
+                      <ion-toolbar>
+                        <ion-title>Bruschetta</ion-title>
+                        <ion-buttons slot="end">
+                          <ion-button (click)="setOpen9(false)">Fechar</ion-button>
+                        </ion-buttons>
+                      </ion-toolbar>
+                    </ion-header>
+                    <ion-content class="ion-padding">
+                      <img alt="Bruschetta" src="https://media.discordapp.net/attachments/1060989219432054835/1112837229228871770/ab1fb7f1-4397-45d2-83ec-417b88b2d8d9.jpg?width=350&height=350" />
+                      <p>
+                        Bruschetta é uma entrada clássica da culinária italiana, feita com fatias de pão italiano grelhado e cobertas com tomates frescos, alho, manjericão, azeite de oliva e sal. É uma entrada simples e saborosa, destacando os ingredientes frescos e aromáticos.
+                      </p>
+                      <ion-button>Adicionar por R$6.50</ion-button>
+                    </ion-content>
+                  </ng-template>
+                </ion-modal>
+              </ion-item>
+    
+              <ion-item expand="block" (click)="setOpen10(true)" lines="none">
+                <ion-thumbnail slot="start">
+                  <img alt="Tabule" src="https://i.imgur.com/zvY7ujl.png" />
+                </ion-thumbnail>
+                <ion-label>Tabule</ion-label><ion-button>R$4.90</ion-button>
+                <ion-modal [isOpen]="isModalOpen10">
+                  <ng-template>
+                    <ion-header>
+                      <ion-toolbar>
+                        <ion-title>Tabule</ion-title>
+                        <ion-buttons slot="end">
+                          <ion-button (click)="setOpen10(false)">Fechar</ion-button>
+                        </ion-buttons>
+                      </ion-toolbar>
+                    </ion-header>
+                    <ion-content class="ion-padding">
+                      <img alt="Tabule" src="https://i.imgur.com/L3qRko5.png" />
+                      <p>
+                        Tabule é uma salada refrescante e leve da culinária mediterrânea, feita com triguilho (couscous de trigo), tomate, pepino, cebola, salsa, hortelã, suco de limão e azeite de oliva. É uma entrada colorida e cheia de sabores frescos.
+                      </p>
+                      <ion-button>Adicionar por R$4.90</ion-button>
+                    </ion-content>
+                  </ng-template>
+                </ion-modal>
+              </ion-item>
+    
+              <ion-item expand="block" (click)="setOpen11(true)" lines="none">
+                <ion-thumbnail slot="start">
+                  <img alt="Batata Frita" src="https://i.imgur.com/aPW4Ec1.png" />
+                </ion-thumbnail>
+                <ion-label>Batata Frita</ion-label><ion-button>R$4.90</ion-button>
+                <ion-modal [isOpen]="isModalOpen11">
+                  <ng-template>
+                    <ion-header>
+                      <ion-toolbar>
+                        <ion-title>Batata Frita</ion-title>
+                        <ion-buttons slot="end">
+                          <ion-button (click)="setOpen11(false)">Fechar</ion-button>
+                        </ion-buttons>
+                      </ion-toolbar>
+                    </ion-header>
+                    <ion-content class="ion-padding">
+                      <img alt="Batata Frita" src="https://i.imgur.com/FpUWd9r.png" />
+                      <p>
+                        Batatas fritas classicas crocantes que vão bem com qualquer acompanhamento.
+                      </p>
+                      <ion-button>Adicionar por R$4.90</ion-button>
+                    </ion-content>
+                  </ng-template>
+                </ion-modal>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+      </div>
+    </ion-card>
+    <br>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Pratos Principais</ion-card-title>
+        <ion-card-subtitle>Prato Individual para 1 pessoa</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item expand="block" (click)="setOpen4(true)" lines="none">
+            <ion-thumbnail slot="start">
+              <img alt="Enchiladas Suizas" src="https://media.discordapp.net/attachments/1060989219432054835/1112848456978026587/5f954fe1-4e41-435f-ba90-37044d3ce647.jpg?width=60&height=60" />
+            </ion-thumbnail>
+            <ion-label>Enchiladas Suizas</ion-label><ion-button>R$49.90</ion-button>
+            <ion-modal [isOpen]="isModalOpen4">
+              <ng-template>
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title>Enchiladas Suizas</ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button (click)="setOpen4(false)">Fechar</ion-button>
+                    </ion-buttons>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content class="ion-padding">
+                  <img alt="Enchiladas Suizas" src="https://media.discordapp.net/attachments/1060989219432054835/1112848456978026587/5f954fe1-4e41-435f-ba90-37044d3ce647.jpg?width=350&height=350" />
+                  <p>
+                    Tortilhas de milho macias recheadas com frango desfiado, cobertas com um molho de queijo suave e cremoso, e gratinadas até dourar. Acompanhadas de arroz mexicano e guacamole.
+                  </p>
+                  <ion-button>Adicionar por R$49.90</ion-button>
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+          </ion-item>
+    
+          <ion-item expand="block" (click)="setOpen3(true)" lines="none">
+            <ion-thumbnail slot="start">
+              <img alt="Pad Thai" src="https://media.discordapp.net/attachments/1060989219432054835/1112849029370478692/e8eb805d-91d4-4718-87de-55c68fd5cdd9.jpg?width=60&height=60" />
+            </ion-thumbnail>
+            <ion-label>Pad Thai</ion-label><ion-button>R$59.90</ion-button>
+            <ion-modal [isOpen]="isModalOpen3">
+              <ng-template>
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title>Pad Thai</ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button (click)="setOpen3(false)">Fechar</ion-button>
+                    </ion-buttons>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content class="ion-padding">
+                  <img alt="Pad Thai" src="https://media.discordapp.net/attachments/1060989219432054835/1112849029370478692/e8eb805d-91d4-4718-87de-55c68fd5cdd9.jpg?width=350&height=350" />
+                  <p>
+                    Um clássico da culinária tailandesa, o Pad Thai é um prato de macarrão de arroz salteado com camarões, tofu, broto de feijão, ovos, amendoim picado e um molho agridoce de tamarindo. Finalizado com coentro fresco e suco de limão.
+                  </p>
+                  <ion-button>Adicionar por R$59.90</ion-button>
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+          </ion-item>
+    
+          <ion-item expand="block" (click)="setOpen2(true)" lines="none">
+            <ion-thumbnail slot="start">
+              <img alt="Butter Chicken" src="https://media.discordapp.net/attachments/1060989219432054835/1112849475485044876/8b25ee8e-ad3e-4f77-826e-e67477c1e774.jpg?width=60&height=60" />
+            </ion-thumbnail>
+            <ion-label>Butter Chicken</ion-label><ion-button>R$69.90</ion-button>
+            <ion-modal [isOpen]="isModalOpen2">
+              <ng-template>
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title>Butter Chicken</ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button (click)="setOpen2(false)">Fechar</ion-button>
+                    </ion-buttons>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content class="ion-padding">
+                  <img alt="Butter Chicken" src="https://media.discordapp.net/attachments/1060989219432054835/1112849475485044876/8b25ee8e-ad3e-4f77-826e-e67477c1e774.jpg?width=350&height=350" />
+                  <p>
+                    Um prato popular da culinária indiana, o Butter Chicken é feito com pedaços de frango marinados em iogurte e temperados com uma mistura de especiarias indianas. O frango é cozido em um molho rico e cremoso de tomate e manteiga, servido com arroz basmati e naan (pão indiano).
+                  </p>
+                  <ion-button>Adicionar por R$69.90</ion-button>
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+          </ion-item>
+    
+          <ion-item expand="block" (click)="setOpen(true)" lines="none">
+            <ion-thumbnail slot="start">
+              <img alt="Risoto de Funghi Porcini" src="https://media.discordapp.net/attachments/1060989219432054835/1112849821229928549/e865cb1c-b0cb-4c9f-b6ca-020a098d56c7.jpg?width=60&height=60" />
+            </ion-thumbnail>
+            <ion-label>Risoto de Funghi Porcini</ion-label><ion-button>R$79.90</ion-button>
+            <ion-modal [isOpen]="isModalOpen">
+              <ng-template>
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title>Risoto de Funghi Porcini</ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button (click)="setOpen(false)">Fechar</ion-button>
+                    </ion-buttons>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content class="ion-padding">
+                  <img alt="Risoto de Funghi Porcini" src="https://media.discordapp.net/attachments/1060989219432054835/1112849821229928549/e865cb1c-b0cb-4c9f-b6ca-020a098d56c7.jpg?width=350&height=350" />
+                  <p>
+                    Um prato clássico da culinária italiana, o Risoto de Funghi Porcini é preparado com arroz arbóreo cozido lentamente em caldo de legumes e vinho branco, e enriquecido com cogumelos Porcini secos reidratados. Finalizado com queijo parmesão ralado e manteiga, resultando em um risoto cremoso e aromático.
+                  </p>
+                  <ion-button>Adicionar por R$79.90</ion-button>
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+          </ion-item>
+
+          <ion-item expand="block" (click)="setOpen5(true)" lines="none">
+            <ion-thumbnail slot="start">
+              <img alt="Festival Mediterrâneo" src="https://media.discordapp.net/attachments/1060989219432054835/1112832869103046707/df8d1a25-e263-45d5-bbb3-a4228c9d1234.jpg?width=60&height=60" />
+            </ion-thumbnail>
+            <ion-label>Festival Mediterrâneo</ion-label><ion-button>R$29.90</ion-button>
+            <ion-modal [isOpen]="isModalOpen5">
+              <ng-template>
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title>Festival Mediterrâneo</ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button (click)="setOpen5(false)">Fechar</ion-button>
+                    </ion-buttons>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content class="ion-padding">
+                  <img alt="Festival Mediterrâneo" src="https://media.discordapp.net/attachments/1060989219432054835/1112832869103046707/df8d1a25-e263-45d5-bbb3-a4228c9d1234.jpg?width=350&height=350" />
+                  <p>
+                    Risoto de camarão ao molho de limão-siciliano e raspas de laranja, finalizado com folhas de manjericão fresco.
+                  </p>
+                  <ion-button>Adicionar por R$29.90</ion-button>
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

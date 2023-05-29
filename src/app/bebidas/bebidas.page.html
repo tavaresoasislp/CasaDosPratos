@@ -1,0 +1,184 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Bebidas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Bebidas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="containerPaginaInicialExtra">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Bebidas em geral</ion-card-title>
+
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item expand="block" (click)="setOpen(true)" lines="none">
+            <ion-thumbnail slot="start">
+              <img alt="Margarita" src="https://i.imgur.com/7wdvK61.png" />
+            </ion-thumbnail>
+            <ion-label>Margarita</ion-label><ion-button>R$7.90</ion-button>
+            <ion-modal [isOpen]="isModalOpen">
+              <ng-template>
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title>Margarita</ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button (click)="setOpen(false)">Fechar</ion-button>
+                    </ion-buttons>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content class="ion-padding">
+                  <img alt="Margarita" src="https://i.imgur.com/wOlCHrk.png" />
+                  <p>
+                    Um clássico coquetel mexicano, a Margarita é feita com tequila, suco de limão, licor de laranja e gelo. É uma bebida refrescante e levemente ácida, perfeita para acompanhar pratos da culinária mexicana.
+                  </p>
+                  <ion-button>Adicionar por R$7.90</ion-button>
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+          </ion-item>
+    
+          <ion-item expand="block" (click)="setOpen2(true)" lines="none">
+            <ion-thumbnail slot="start">
+              <img alt="Thai Iced Tea (Chá Gelado Tailandês)" src="https://i.imgur.com/DZKdhV7.png" />
+            </ion-thumbnail>
+            <ion-label>Thai Iced Tea (Chá Gelado Tailandês)</ion-label><ion-button>R$6.90</ion-button>
+            <ion-modal [isOpen]="isModalOpen2">
+              <ng-template>
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title>Thai Iced Tea (Chá Gelado Tailandês)</ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button (click)="setOpen2(false)">Fechar</ion-button>
+                    </ion-buttons>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content class="ion-padding">
+                  <img alt="Thai Iced Tea (Chá Gelado Tailandês)" src="https://i.imgur.com/WISzyTQ.png" />
+                  <p>
+                    Uma bebida tradicional da Tailândia, o Thai Iced Tea é feito com chá preto forte, açúcar, leite condensado e servido com gelo. Tem um sabor doce e cremoso, com um toque exótico e refrescante.
+                  </p>
+                  <ion-button>Adicionar por R$6.90</ion-button>
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+          </ion-item>
+    
+          <ion-item expand="block" (click)="setOpen3(true)" lines="none">
+            <ion-thumbnail slot="start">
+              <img alt="Lassi de Manga" src="https://i.imgur.com/e07ovag.png" />
+            </ion-thumbnail>
+            <ion-label>Lassi de Manga</ion-label><ion-button>R$2.90</ion-button>
+            <ion-modal [isOpen]="isModalOpen3">
+              <ng-template>
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title>Lassi de Manga</ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button (click)="setOpen3(false)">Fechar</ion-button>
+                    </ion-buttons>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content class="ion-padding">
+                  <img alt="Lassi de Manga" src="https://i.imgur.com/h66FLAb.png" />
+                  <p>
+                    O Lassi de Manga é uma bebida indiana feita com iogurte, manga fresca, açúcar e água de rosas. É uma bebida cremosa, com um sabor tropical e refrescante. Perfeito para acompanhar pratos picantes da culinária indiana.
+                  </p>
+                  <ion-button>Adicionar por R$4.90</ion-button>
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+          </ion-item>
+    
+          <ion-item expand="block" (click)="setOpen4(true)" lines="none">
+            <ion-thumbnail slot="start">
+              <img alt="Espresso Italiano" src="https://i.imgur.com/USfLHST.png" />
+            </ion-thumbnail>
+            <ion-label>Espresso Italiano</ion-label><ion-button>R$3.50</ion-button>
+            <ion-modal [isOpen]="isModalOpen4">
+              <ng-template>
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title>Espresso Italiano</ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button (click)="setOpen4(false)">Fechar</ion-button>
+                    </ion-buttons>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content class="ion-padding">
+                  <img alt="Espresso Italiano" src="https://i.imgur.com/Yq9lkKw.png" />
+                  <p>
+                    Um clássico italiano, o Espresso é um café concentrado, preparado com água quente passada sob alta pressão através de grãos de café moídos finamente. É uma bebida encorpada, intensa e aromática, apreciada em todo o mundo.
+                  </p>
+                  <ion-button>Adicionar por R$2.50</ion-button>
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+          </ion-item>
+
+          <ion-item expand="block" (click)="setOpen5(true)" lines="none">
+            <ion-thumbnail slot="start">
+              <img alt="Limonada de Manjericão" src="https://i.imgur.com/5DK8dxd.png" />
+            </ion-thumbnail>
+            <ion-label>Limonada de Manjericão</ion-label><ion-button>R$2.90</ion-button>
+            <ion-modal [isOpen]="isModalOpen5">
+              <ng-template>
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title>Limonada de Manjericão</ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button (click)="setOpen5(false)">Fechar</ion-button>
+                    </ion-buttons>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content class="ion-padding">
+                  <img alt="Limonada de Manjericão" src="https://i.imgur.com/NivGMe4.png" />
+                  <p>
+                    Uma refrescante limonada feita com suco de limão fresco, açúcar, água e folhas de manjericão. Essa combinação proporciona um sabor cítrico e herbáceo, perfeito para os dias quentes do Mediterrâneo.
+                  </p>
+                  <ion-button>Adicionar por R$2.90</ion-button>
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+          </ion-item>
+
+          <ion-item expand="block" (click)="setOpen6(true)" lines="none">
+            <ion-thumbnail slot="start">
+              <img alt="Refrigerantes, Cerveja, Agua" src="https://i.imgur.com/aJqzl7Y.png" />
+            </ion-thumbnail>
+            <ion-label>Refrigerantes, Cerveja e Agua</ion-label><ion-button>R$2.90</ion-button>
+            <ion-modal [isOpen]="isModalOpen6">
+              <ng-template>
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title>Refrigerantes, Cerveja e Agua</ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button (click)="setOpen6(false)">Fechar</ion-button>
+                    </ion-buttons>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content class="ion-padding">
+                  <img alt="Refrigerantes, Cerveja e Agua" src="https://i.imgur.com/jyE1Qwr.png" />
+                  <p>
+                    Escolha entre diferentes refrigerantes, cervejas ou água.
+                  </p>
+                  <ion-button>Coca-Cola Lata- R$4.90</ion-button>
+                  <ion-button>Fanta-Laranja Lata- R$3.90</ion-button>
+                  <ion-button>Guaraná Antártica Lata- R$2.90</ion-button>
+                  <ion-button>Água Mineral 500mL- R$2.00</ion-button>
+                  <ion-button>Cerveja da Casa 450mL- R$7.90</ion-button>
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

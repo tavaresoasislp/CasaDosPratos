@@ -28,9 +28,12 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const app = fixture.nativeElement;
     const menuItems = app.querySelectorAll('ion-label');
-    expect(menuItems.length).toEqual(12);
-    expect(menuItems[0].textContent).toContain('Inbox');
-    expect(menuItems[1].textContent).toContain('Outbox');
+    expect(menuItems.length).toEqual(5);
+    expect(menuItems[0].textContent).toContain('Inicio');
+    expect(menuItems[1].textContent).toContain('Lanches');
+    expect(menuItems[2].textContent).toContain('Pratos');
+    expect(menuItems[3].textContent).toContain('Sobremesas');
+    expect(menuItems[4].textContent).toContain('Bebidas');
   });
 
   it('should have urls', async () => {
@@ -38,9 +41,12 @@ describe('AppComponent', () => {
     fixture.detectChanges();
     const app = fixture.nativeElement;
     const menuItems = app.querySelectorAll('ion-item');
-    expect(menuItems.length).toEqual(12);
-    expect(menuItems[0].getAttribute('ng-reflect-router-link')).toEqual('/folder/inbox');
-    expect(menuItems[1].getAttribute('ng-reflect-router-link')).toEqual('/folder/outbox');
+    expect(menuItems.length).toEqual(5);
+    expect(menuItems[0].getAttribute('ng-reflect-router-link')).toEqual('/menu/inicio');
+    expect(menuItems[1].getAttribute('ng-reflect-router-link')).toEqual('/menu/lanches');
+    expect(menuItems[2].getAttribute('ng-reflect-router-link')).toEqual('/menu/pratos');
+    expect(menuItems[3].getAttribute('ng-reflect-router-link')).toEqual('/menu/sobremesas');
+    expect(menuItems[4].getAttribute('ng-reflect-router-link')).toEqual('/menu/bebidas');
   });
 
 });
